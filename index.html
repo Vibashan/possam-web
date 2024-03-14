@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <style>
+      td, th {
+        border: 0px solid black;          
+        }
+      img{
+   padding: 5px;
+}
+      </style>
+
+  <title>PosSAM</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  
+  <link rel="shortcut icon" href="./static/images/possam/jhu_web.png" />
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
+  <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title"> PosSAM: Panoptic Open-vocabulary <br> Segment Anything</h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Group of first four authors -->
+            <div class="authors-group">
+              <span class="author-block">
+                <a href="https://vibashan.github.io/" target="_blank">Vibashan VS*</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/view/shubhankarborse/home" target="_blank">Shubhankar Borse*</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=-z-O5AIAAAAJ&hl=en" target="_blank">Hyojin Park</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/site/debasmitbunadas/" target="_blank">Debasmit Das</a><sup>2</sup>,
+              </span>
+            </div>
+            <!-- Group of last three authors -->
+            <div class="authors-group">
+              <span class="author-block">
+                <a href="https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/" target="_blank">Vishal Patel</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.au/citations?user=Mx8MbWYAAAAJ&hl=en" target="_blank">Munawar Hayat</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.porikli.com/" target="_blank">Fatih Porikl</a><sup>2</sup>
+              </span>
+            </div>
+          </div>
+          
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Johns Hopkins University<sup>1</sup>,</span>
+            <span class="author-block">Qualcomm AI Research<sup>2</sup></span>
+          </div>
+         
+         <div class="column has-text-centered">
+            <a href="as"></a>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary material</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://github.com/Vibashan/PosSAM"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <!--  <i class="ai ai-arxiv"></i> -->
+                     <i class="fab fa-github"></i> 
+                  </span>
+                  <span>Github</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Slides</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        
+        <h2 class="title is-3">Motivation & Contribtuion</h2>
+        <!-- <img src="./static/images/possam/possum_intro.png" alt="" border=0 height=300 width=1200></img>
+        <img src="./static/images/possam/suppli_enc_dec.png" alt="" border=0 height=600 width=1500></img> -->
+        <img src="./static/images/possam/possum_intro.png" alt="" style="border:0; height:250px; width:600px;">
+        <img src="./static/images/possam/suppli_enc_dec.png" alt="" border="0" height="600" width="1500">
+        <div class="content has-text-justified">
+          <ul>
+            <li> SAM possesses exceptional spatial awareness and promptable segmentation capabilities, but it lacks class/semantic awareness and tends to over-segment objects into multiple regions. </li>
+            <li> SAM decoder is designed to be lightweight, enabling the SAM encoder to undertake the majority of the segmentation task at encoder level itself.</li>
+            <li> Therefore, unifying SAM encoder and CLIP we introduce PosSAM, an open-vocabulary panoptic segmentation model that generates class and instance-aware masks for variety of visual concepts in an end-to-end trainable framework.</li>
+            <li> Further, we develop a novel Local Discriminative Pooling (LDP) module for unbiased open-vocabulary classification and Mask-Aware Selective Ensembling (MASE) algorithm for robust real-world open-vocabulary segmentation.</li>
+          </ul>
+          
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">PosSAM Framework</h2>
+          <div class="content has-text-justified">
+            <h5 class="subtitle has-text-centered"></h5> 
+
+            <img src="./static/images/possam/Archi_v3.png" alt="" border=0 height=500 width=1500></img></
+          <p>
+            Overview of our PosSAM training pipeline. We first encode the input image
+            using the SAM backbone to extract spatially rich features, which are processed through
+            a Feature Pyramid Network to obtain hierarchical multi-scale features decoded to form
+            mask features and predict class-agnostic masks. Concurrently, we train an IoU predictor
+            for each mask to measure its quality. For classification, using our proposed LDP module we enhance
+            discriminative CLIP features with class-agnostic SAM features for an unbiased OV classification. These LDP features are then classified by a standard open-vocabulary
+            supervision with ground truth category labels derived from the CLIP text encoder.
+          </p> 
+
+      
+          </div>
+       </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Results</h2>
+          <div class="content has-text-justified">
+            <h5 class="subtitle has-text-centered"></h5> 
+            <img src="./static/images/possam/results.png" alt="" border=0 height=500 width=1500></img></
+          </div>
+       </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+          <div class="content has-text-justified">
+            <h5 class="subtitle has-text-centered"></h5> 
+            <img src="./static/images/possam/quali-1.png" alt="" border=0 height=500 width=1500></img></
+          <p>
+            Zero-shot panoptic segmentation capability from COCO to ADE20K on unseen classes. This figure shows comparison with recent SOTA approaches. Only novel classes are shown. We can observe that PosSAM has the ability to accurately
+            segment objects that are never seen before such as paintings, dishwashers, exhaust, showing advantages over other SOTA methods.
+          </p> 
+
+      
+          </div>
+       </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container content is-max-desktop">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+  <!-- @inproceedings{vs2023mask,
+  title={Mask-free possam: Open-Vocabulary Instance Segmentation without Manual Mask Annotations},
+  author={VS, Vibashan and Yu, Ning and Xing, Chen and Qin, Can and Gao, Mingfei and Niebles, Juan Carlos and Patel, Vishal M and Xu, Ran},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={23539--23549},
+  year={2023} -->
+}</code></pre>
+  </div>
+</section>
+
+<section class="section" >
+  <div class="container is-max-desktop content">
+    <h5 class="title"> Acknowledgement: The website Template taken from <span class="author-block">
+              <a href="https://nerfies.github.io/" target="_blank">Nerfies</a></h5>
+
+  </div>
+</section>
+
+<script>
+    const viewers = document.querySelectorAll(".image-compare");
+    viewers.forEach((element) => {
+        let view = new ImageCompare(element, {
+            hoverStart: true,
+            addCircle: true
+        }).mount();
+    });
+
+    $(document).ready(function () {
+        var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+            lineNumbers: false,
+            lineWrapping: true,
+            readOnly: true
+        });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    });
+</script>
+</body>
+</html>
