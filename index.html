@@ -40,6 +40,71 @@
   <script src="./static/js/index.js"></script>
 
 </head>
+<style>
+    body {
+        font-family: 'Google Sans', sans-serif;
+    }
+    .top-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem; /* Reduced padding */
+        background-color: #ffffff;
+    }
+    .nav-center {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Reduced gap */
+    }
+    .home-icon {
+        font-size: 1.3rem; /* Slightly reduced size */
+        color: #4a4a4a;
+        text-decoration: none;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .publication-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 1rem; /* Reduced top margin */
+        margin-bottom: 1rem;
+    }
+    .publication-authors {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .author-block {
+        display: inline-block;
+        margin-right: 10px;
+    }
+</style>
 
 <body>
 
@@ -99,50 +164,32 @@
                 <a href="https://arxiv.org/pdf/2403.09620"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                    <img src="./static/images/pdf.svg" alt="PDF icon" width="32" height="32">
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supplementary material</span>
-                </a>
-              </span> -->
+          
               <span class="link-block">
                 <a href="https://github.com/Vibashan/PosSAM"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
-                    <!--  <i class="ai ai-arxiv"></i> -->
-                     <i class="fab fa-github"></i> 
+                    <img src="./static/images/github.svg" alt="GitHub icon" width="32" height="32">
                   </span>
                   <span>Github</span>
                 </a>
               </span>
-
-               <span class="link-block">
+          
+              <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
-                    <!--  <i class="ai ai-arxiv"></i> -->
-                     <i class="fab fa-github"></i> 
+                    <img src="./static/images/hf.svg" alt="Hugging Face icon" width="32" height="32">
                   </span>
-                  <span>Hugging Face (Coming Soon)</span>
+                  <span>Hugging Face</span>
                 </a>
               </span>
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Slides</span>
-                </a>
-              </span> -->
+          
             </div>
           </div>
 
